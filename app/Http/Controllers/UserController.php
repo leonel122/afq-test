@@ -26,9 +26,8 @@ class UserController extends Controller
 
         $user = User::all();
         //retornar la variable $user a la vista user/index
-        return View ('admin.index')
-            //enviamos la variable user a la vista con el contenido de la variable $user
-        ->with('user', $user);
+        return View ('admin.index', ['user' => $user]);
+
     }
 
     /**
@@ -45,8 +44,8 @@ class UserController extends Controller
 
         //retornar la variable $user a la vista user/index
             //enviamos la variable user a la vista con el contenido de la variable $user
-    
-        
+
+
     }
 
     /**
@@ -77,9 +76,7 @@ class UserController extends Controller
     {
         $user = User::find($id);
         //retornar la variable $user a la vista user/index
-        return View ('admin.show')
-            //enviamos la variable user a la vista con el contenido de la variable $user
-        ->with('user', $user);
+        return View ('admin.show', ['user' => $user]);
     }
 
     /**

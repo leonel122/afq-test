@@ -23,10 +23,10 @@
         <tr>
             <td>{{ $value->id }}</td>
             <td>{{ $value->name }}</td>
-            <td>{{ $value->email }}</td> 
+            <td>{{ $value->email }}</td>
             <td>
-                <!-- show the nerd (uses the show method found at GET /nerds/{id} -->
-                <a class="btn btn-small btn-success" href="{{ URL::to('user/' . $value->id) }}">Mostrar Usuario</a>
+              <!-- show the nerd (uses the show method found at GET /nerds/{id} -->
+              <a class="btn btn-small btn-success" href="{{ URL::to('user/' . $value->id) }}">Mostrar Usuario</a>
             </td>
         </tr>
     @endforeach

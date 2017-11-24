@@ -11,16 +11,17 @@
 |
 */
 Route::get('/user/create', 'UserController@create');
+
 Route::get('/', function(){
 	return view('auth.login');
 
 	});
 
 Route::get('/register', function(){
-	return view('auth.login');
-
+	return view('auth.register');
 	});
 
+// /user
 Route::get('/user', 'UserController@index');
 
 
@@ -40,5 +41,3 @@ Route::get('/user/{id}/delete','UserController@destroy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-
-

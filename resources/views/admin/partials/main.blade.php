@@ -5,8 +5,7 @@
         <title>Sistema | @yield('title')</title>
     </head>
     <body>
-    
-             <div class="container">
+        <div class="container">
             @yield('content')
         </div>
     <script src="{{asset('plugins/jquery/js/jquery-3.1.0.js')}}"></script>
