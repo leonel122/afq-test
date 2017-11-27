@@ -27,7 +27,7 @@ Route::get('/user', 'UserController@index');
 
 Route::post('/user/create', ['as'=>'user.create','uses'=>'UserController@store']);
 
-Route::post('user/{id}/update',['as' => 'user.update', 'uses' => 'UserController@Update']);
+Route::post('user/{id}/update', ['as' => 'user.update', 'uses' => 'UserController@Update']);
 
 
 

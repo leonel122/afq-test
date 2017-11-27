@@ -20,24 +20,10 @@
         {!! Form::label('email', 'Email') !!}
         {!! Form::email('email', Input::old('email'), array('class' => 'form-control')) !!}
     </div>
-
-    <div class="form-group">
+    <!-- <div class="form-group">
         {!! Form::label('password', 'Password') !!}
         {!! Form::Password('password', array('class' => 'form-control')) !!}
-    </div>
-
-    <div class="form-group">
-        <select required="required" class="form-control" name="title">
-    <option></option>
-    @foreach ($users as $user => $value)
-        <option value="{{ $user }}" {{ (Input::old("title") == $user ? "selected":"") }}>{{ $value->name }}</option>
-    @endforeach
-    </select>
-       
-    </div>
-
-    
-
+    </div> -->
     {!! Form::submit('Create Usuario', array('class' => 'btn btn-primary')) !!}
 {!! Form::close() !!}
 </table>
